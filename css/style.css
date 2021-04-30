@@ -1,0 +1,1054 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --clr-primary-100: #fff;
+  --clr-primary-900: #000;
+
+  --clr-primary-dv: #2d2640;
+  --clr-primary-gb: #95a9c6;
+
+  --clr-neutral-vdv: #2b272f;
+  --clr-neutral-dgv: #837d87;
+  --clr-neutral-vlg: #fafafa;
+
+  --ff-heading: "DM Serif Display", serif;
+  --ff-body: "Karla", sans-serif;
+
+  --bd-primary-clr: #2b272f;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within,
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: var(--ff-body);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-primary-100);
+}
+
+button {
+  border: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex__jc-c {
+  justify-content: center;
+}
+
+.flex__ai-c {
+  align-items: center;
+}
+
+.dp-none {
+  display: none;
+}
+
+.scroll-hidden {
+  overflow: hidden;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-primary-100);
+  z-index: 100;
+  height: 4.5em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.nav-links li:last-child {
+  margin: 0 0 0 1em;
+}
+
+.nav-item {
+  color: var(--clr-neutral-dgv);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: var(--clr-neutral-vdv);
+}
+
+.nav-cta {
+  border: 2px solid #2b272f;
+  color: var(--clr-neutral-vdv);
+  padding: 0.5em 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-cta:hover {
+  color: var(--clr-primary-100);
+  background: var(--clr-neutral-vdv);
+}
+
+.nav-burger {
+  display: none;
+  height: 32px;
+  width: 32px;
+}
+
+.nav-burger-open {
+  background: url("/ted/projects/Insure/img/icon-hamburger.svg");
+}
+
+.nav-burger-close {
+  background: url("/ted/projects/Insure/img/icon-close.svg");
+}
+
+/* Promise Section */
+
+.promise {
+  background: var(--clr-primary-dv);
+  padding: 5em 0 0 0;
+  position: relative;
+  height: 50em;
+}
+
+.promise::before {
+  content: "";
+  display: inline-block;
+  background: url("/ted/projects/Insure/img/bg-pattern-intro-right-desktop.svg")
+    no-repeat;
+
+  height: 593px;
+  width: 436px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.promise::after {
+  content: "";
+  display: inline-block;
+  background: var(--clr-primary-100);
+  height: 215px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.promise__split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+}
+
+.promise__headline {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+}
+
+.promise__headline::before {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #fafafa;
+  height: 2px;
+  width: 180px;
+}
+
+.promise__headline h1 {
+  font-family: var(--ff-heading);
+  font-weight: 400;
+  font-size: 5rem;
+  color: var(--clr-neutral-vlg);
+  line-height: 1;
+}
+
+.promise__headline p {
+  color: var(--clr-neutral-vlg);
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.promise__headline-cta {
+  color: var(--clr-primary-100);
+  background: none;
+  border: 1px solid #fff;
+  padding: 0.5em 2em;
+  width: 180px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  z-index: 6;
+}
+
+.promise__headline-cta:hover {
+  color: var(--clr-primary-900);
+  background: var(--clr-primary-100);
+  cursor: pointer;
+}
+
+.promise__image {
+  z-index: 1;
+  justify-self: flex-end;
+}
+
+#blog {
+  position: relative;
+}
+
+#blog::before {
+  content: "";
+  display: inline-block;
+  background: url("/ted/projects/Insure/img/bg-pattern-intro-left-desktop.svg")
+    no-repeat;
+  height: 504px;
+  width: 195px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.feature {
+  padding: 5em 0;
+}
+
+.feature__header {
+  font-family: var(--ff-heading);
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--clr-neutral-vdv);
+  line-height: 1;
+  margin: 0.8em 0 1em 0;
+  grid-column: span 3;
+  position: relative;
+}
+
+.feature__header::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #837d87;
+  width: 180px;
+}
+
+.feature__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  position: relative;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* .feature__item h2 {
+  margin: 1em 0 0.8em 0;
+} */
+
+.feature__icon {
+  width: 86px;
+  height: 86px;
+}
+
+.cta__split {
+  background: var(--clr-primary-dv);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: flex-end;
+  position: relative;
+  height: 250px;
+  padding: 3em;
+}
+
+.cta__split::before {
+  content: "";
+  background: url("/ted/projects/Insure/img/bg-pattern-how-we-work-desktop.svg")
+    no-repeat;
+  width: 434px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+}
+
+.cta__heading {
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-vlg);
+  font-size: 3rem;
+  line-height: 1;
+  max-width: 440px;
+  justify-self: flex-start;
+}
+
+.cta {
+  margin: 5em 0;
+}
+
+.cta__button {
+  background: none;
+  border: 1px solid #fff;
+  color: var(--clr-neutral-vlg);
+  height: 50px;
+  width: 180px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-self: flex-end;
+  z-index: 5;
+}
+
+.cta__button:hover {
+  color: var(--clr-primary-dv);
+  background: var(--clr-neutral-vlg);
+  cursor: pointer;
+}
+
+.social-links {
+  background: var(--clr-neutral-vlg);
+  padding: 5em 0;
+  position: relative;
+}
+
+.social-links::before {
+  content: "";
+  background: url("/ted/projects/Insure/img/bg-pattern-footer-desktop.svg")
+    no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.social-links__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5em 0;
+  position: relative;
+}
+
+.social-links__divider {
+  grid-column: span 4;
+  border: 1px solid #837d87;
+}
+
+.socials {
+  align-self: center;
+  grid-column: span 3;
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+}
+
+.socials img {
+  height: 24px;
+  transition: transform 0.1s 0s ease;
+}
+
+.socials img:hover {
+  transform: scale(1.5);
+}
+
+.social-links__category dt {
+  margin-bottom: 1.5em;
+  color: var(--clr-neutral-dgv);
+  text-transform: uppercase;
+}
+
+.social-links__category dd {
+  margin: 1em 0;
+  color: var(--clr-primary-dv);
+  text-transform: uppercase;
+}
+
+.social-links__category a {
+  color: var(--clr-primary-dv);
+}
+
+.social-links__category a:hover {
+  text-decoration: underline;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            MEDIA QUERIES 
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@media only screen and (max-width: 375px) {
+  #blog::before,
+  .promise::before,
+  .cta__split::before {
+    background: none;
+  }
+
+  .container {
+    width: 85%;
+    text-align: center;
+  }
+
+  .container-mobile {
+    width: 100%;
+  }
+
+  .nav-flex {
+    padding: 1.2em 0;
+  }
+
+  /* NAV BURGER START */
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+
+  .nav-menu {
+    background: var(--clr-neutral-vdv);
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 1.5em;
+    z-index: 19;
+  }
+
+  .nav-menu::before {
+    content: "";
+    background: url("/ted/projects/Insure/img/bg-pattern-mobile-nav.svg")
+      no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 375px;
+    height: 218px;
+  }
+
+  .nav-menu__link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 18;
+  }
+
+  .nav-menu__link:not(:last-child) {
+    margin-bottom: 1.2em;
+  }
+
+  .nav-menu__cta {
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+  }
+
+  .nav-menu__cta:hover {
+    background: var(--clr-primary-100);
+    color: var(--clr-primary-900);
+  }
+
+  /* NAV BURGER END */
+
+  .promise {
+    padding: 0;
+    height: 70em;
+    position: relative;
+  }
+
+  .promise::after {
+    content: "";
+    background: var(--clr-primary-100);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .promise__split {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-gap: 0;
+  }
+
+  .promise__headline {
+    padding: 5em 2em;
+    grid-row: 2;
+    position: relative;
+    justify-content: center;
+    height: 38em;
+  }
+
+  .promise__headline::before {
+    content: "";
+    position: absolute;
+    background: url("/ted/projects/Insure/img/bg-pattern-intro-left-mobile.svg")
+      no-repeat;
+    background-position: top left;
+    height: 165px;
+    width: 168px;
+    top: 0;
+    left: 0;
+    border: none;
+    z-index: 10;
+  }
+
+  .promise__headline::after {
+    content: "";
+    position: absolute;
+    background: url("/ted/projects/Insure/img/bg-pattern-intro-right-mobile.svg")
+      no-repeat;
+    background-position: bottom right;
+    height: 330px;
+    width: 124px;
+    bottom: 0;
+    right: 0;
+    border: none;
+    z-index: 11;
+  }
+
+  .promise__headline h1,
+  .promise__headline p,
+  .promise__headline-cta {
+    position: relative;
+    z-index: 12;
+  }
+
+  .promise__headline h1 {
+    font-size: 2.4rem;
+  }
+
+  .promise__headline p {
+    line-height: 1.5;
+  }
+
+  .promise__headline-cta {
+    align-self: center;
+  }
+
+  .promise__image {
+    grid-row: 1;
+  }
+
+  .feature {
+    padding: 2em 0;
+  }
+
+  .feature__item {
+    grid-column: span 3;
+    margin: 1.5em 0;
+  }
+
+  .feature__icon {
+    align-self: center;
+  }
+
+  .feature__items::before {
+    position: relative;
+    grid-column: span 3;
+    justify-self: center;
+  }
+
+  .feature__header {
+    font-size: 2.7rem;
+  }
+
+  .cta {
+    margin: 8em 0;
+    height: 100%;
+  }
+
+  .cta__split {
+    padding: 2em 1em;
+    grid-gap: 2em;
+    height: 317px;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    position: relative;
+    align-content: space-evenly;
+  }
+
+  .cta__split::before {
+    content: "";
+    background: url("/ted/projects/Insure/img/bg-pattern-how-we-work-mobile.svg")
+      no-repeat;
+    background-position: top right;
+    width: 176px;
+    height: 317px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 14;
+  }
+
+  .cta__heading {
+    font-size: 2rem;
+  }
+
+  .cta__button,
+  .cta__heading {
+    justify-self: center;
+    position: relative;
+    z-index: 15;
+  }
+
+  .social-links::before {
+    content: "";
+    background: url("/ted/projects/Insure/img/bg-pattern-footer-mobile.svg")
+      no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 16;
+  }
+
+  .social-links__container {
+    z-index: 17;
+  }
+
+  .social-links__container > * {
+    grid-column: span 4;
+    justify-self: center;
+  }
+
+  .social-links__divider {
+    justify-self: normal;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 575px) {
+  .feature__items {
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .feature__item {
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .promise {
+    height: 75em;
+  }
+
+  .promise__split {
+    grid-template-columns: 1fr;
+  }
+
+  .promise__headline h1 {
+    font-size: 2.5rem;
+  }
+
+  /* .promise__image img {
+    max-width: 70%;
+  } */
+
+  .promise::before {
+    background-size: 45%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 45%;
+    background-position: 0 67%;
+  }
+
+  .cta__split {
+    height: 317px;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .cta__split::before {
+    content: "";
+    background: url("/ted/projects/Insure/img/bg-pattern-how-we-work-mobile.svg")
+      no-repeat;
+    background-position: top right;
+    width: 176px;
+    height: 317px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 14;
+  }
+
+  .cta__heading {
+    font-size: 2rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .cta__button {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 794px) {
+  .promise__split {
+    grid-template-rows: minmax(200px, 1fr);
+  }
+
+  .promise__headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .feature__items {
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .feature__item {
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .promise::before {
+    background-size: 50%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 50%;
+    background-position: 0 80%;
+  }
+
+  .cta__split {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1em;
+  }
+
+  .cta__heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 616px) {
+  .social-links__category {
+    grid-column: span 5;
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 859px) {
+  /* HAMBURGER MENU BREAKPOINT */
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-burger {
+    display: block;
+  }
+
+  .nav-menu {
+    background: var(--clr-neutral-vdv);
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 1.5em;
+    z-index: 99;
+  }
+
+  .nav-menu::before {
+    content: "";
+    background: url("/ted/projects/Insure/img/bg-pattern-intro-right-desktop.svg")
+      no-repeat;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 436px;
+    height: 593px;
+    transform: rotate(90deg);
+    background-position: 100% 20%;
+    background-size: 55%;
+  }
+
+  .nav-menu__link {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 18;
+  }
+
+  .nav-menu__link:not(:last-child) {
+    margin-bottom: 1.2em;
+  }
+
+  .nav-menu__cta {
+    border: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    max-width: 250px;
+  }
+
+  .nav-menu__cta:hover {
+    background: var(--clr-primary-100);
+    color: var(--clr-primary-900);
+  }
+
+  .feature__header {
+    text-align: center;
+  }
+
+  .feature__header::before {
+    display: none;
+  }
+
+  .feature__mobile-divider {
+    display: block;
+    border-top: 1px solid #837d87;
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .cta__heading,
+  .cta__button {
+    z-index: 21;
+  }
+}
+
+@media only screen and (min-width: 794px) and (max-width: 859px) {
+  .promise__headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .promise::before {
+    background-size: 60%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 60%;
+    background-position: 0 80%;
+  }
+
+  .cta__split {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .cta__heading {
+    font-size: 2rem;
+  }
+
+  .feature__items {
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .feature__item {
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .feature__item p {
+    max-width: 25em;
+  }
+}
+
+@media only screen and (min-width: 860px) and (max-width: 991px) {
+  .promise__headline h1 {
+    font-size: 3rem;
+  }
+
+  .promise::before {
+    background-size: 60%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 60%;
+    background-position: 0 80%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .promise__headline h1 {
+    font-size: 3.4rem;
+  }
+
+  .promise::before {
+    background-size: 65%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 65%;
+    background-position: 0 80%;
+  }
+}
+
+@media only screen and (min-width: 1199px) {
+  .promise::before {
+    background-size: 70%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 70%;
+    background-position: 0 90%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  .promise__headline h1 {
+    font-size: 4rem;
+  }
+  .promise::before {
+    background-size: 90%;
+    background-position: top right;
+  }
+
+  #blog::before {
+    background-size: 75%;
+    background-position: bottom left;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .promise__headline h1 {
+    max-width: 560px;
+  }
+
+  .promise__split {
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1640px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1840px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 2040px) {
+  .container {
+    width: 75em;
+  }
+}
