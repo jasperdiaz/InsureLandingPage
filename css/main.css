@@ -352,7 +352,7 @@ button {
 
 .cta__split::before {
   content: "";
-  background: url("//img/bg-pattern-how-we-work-desktop.svg") no-repeat;
+  background: url("/img/bg-pattern-how-we-work-desktop.svg") no-repeat;
   width: 434px;
   height: 250px;
   position: absolute;
@@ -513,7 +513,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("InsureLandingPage/img/bg-pattern-mobile-nav.svg") no-repeat;
+    background: url("InsureLandingPage//img/bg-pattern-mobile-nav.svg") no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
