@@ -175,11 +175,11 @@ button {
 }
 
 .nav-burger-open {
-  background: url("/assets/img/icon-hamburger.svg");
+  background: url("assets/img/icon-hamburger.svg");
 }
 
 .nav-burger-close {
-  background: url("/assets/img/icon-close.svg");
+  background: url("assets/img/icon-close.svg");
 }
 
 /* Promise Section */
@@ -194,7 +194,7 @@ button {
 .promise::before {
   content: "";
   display: inline-block;
-  background: url("/assets/img/bg-pattern-intro-right-desktop.svg")
+  background: url("assets/img/bg-pattern-intro-right-desktop.svg")
     no-repeat;
 
   height: 593px;
@@ -284,7 +284,7 @@ button {
 #blog::before {
   content: "";
   display: inline-block;
-  background: url("/assets/img/bg-pattern-intro-left-desktop.svg")
+  background: url("assets/img/bg-pattern-intro-left-desktop.svg")
     no-repeat;
   height: 504px;
   width: 195px;
@@ -354,7 +354,7 @@ button {
 
 .cta__split::before {
   content: "";
-  background: url("//assets/img/bg-pattern-how-we-work-desktop.svg")
+  background: url("/assets/img/bg-pattern-how-we-work-desktop.svg")
     no-repeat;
   width: 434px;
   height: 250px;
@@ -404,7 +404,7 @@ button {
 
 .social-links::before {
   content: "";
-  background: url("/assets/img/bg-pattern-footer-desktop.svg")
+  background: url("assets/img/bg-pattern-footer-desktop.svg")
     no-repeat;
   height: 100%;
   width: 100%;
@@ -517,7 +517,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("/assets/img/bg-pattern-mobile-nav.svg")
+    background: url("assets/img/bg-pattern-mobile-nav.svg")
       no-repeat;
     position: absolute;
     bottom: 0;
@@ -586,7 +586,7 @@ button {
   .promise__headline::before {
     content: "";
     position: absolute;
-    background: url("/assets/img/bg-pattern-intro-left-mobile.svg")
+    background: url("assets/img/bg-pattern-intro-left-mobile.svg")
       no-repeat;
     background-position: top left;
     height: 165px;
@@ -600,7 +600,7 @@ button {
   .promise__headline::after {
     content: "";
     position: absolute;
-    background: url("/assets/img/bg-pattern-intro-right-mobile.svg")
+    background: url("assets/img/bg-pattern-intro-right-mobile.svg")
       no-repeat;
     background-position: bottom right;
     height: 330px;
@@ -673,7 +673,7 @@ button {
 
   .cta__split::before {
     content: "";
-    background: url("/assets/img/bg-pattern-how-we-work-mobile.svg")
+    background: url("assets/img/bg-pattern-how-we-work-mobile.svg")
       no-repeat;
     background-position: top right;
     width: 176px;
@@ -697,7 +697,7 @@ button {
 
   .social-links::before {
     content: "";
-    background: url("/assets/img/bg-pattern-footer-mobile.svg")
+    background: url("assets/img/bg-pattern-footer-mobile.svg")
       no-repeat;
     background-position: top center;
     position: absolute;
@@ -768,7 +768,7 @@ button {
 
   .cta__split::before {
     content: "";
-    background: url("/assets/img/bg-pattern-how-we-work-mobile.svg")
+    background: url("assets/img/bg-pattern-how-we-work-mobile.svg")
       no-repeat;
     background-position: top right;
     width: 176px;
@@ -867,7 +867,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("/assets/img/bg-pattern-intro-right-desktop.svg")
+    background: url("assets/img/bg-pattern-intro-right-desktop.svg")
       no-repeat;
     position: absolute;
     bottom: -10px;
