@@ -896,10 +896,6 @@ button {
 @media only screen and (max-width: 935px) {
   /* HAMBURGER BREAKPOINT */
 
-  .container {
-    width: 85%;
-  }
-  
   .nav-links {
     display: none;
   }
