@@ -112,8 +112,9 @@ button {
 .scroll-hidden {
   overflow: hidden;
 }
+
 .container {
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -124,7 +125,7 @@ button {
   bottom: 0;
   background: var(--clr-primary-100);
   z-index: 100;
-  height: 4.5em;
+  height: 5.625em;
   display: flex;
   align-items: center;
 }
@@ -186,7 +187,7 @@ button {
 
 .promise {
   background: var(--clr-primary-dv);
-  padding: 5em 0 0 0;
+  padding: 6.5625em 0;
   position: relative;
   height: 50em;
 }
@@ -194,9 +195,7 @@ button {
 .promise::before {
   content: "";
   display: inline-block;
-  background: url(".././img/bg-pattern-intro-right-desktop.svg")
-    no-repeat;
-
+  background: url(".././img/bg-pattern-intro-right-desktop.svg") no-repeat;
   height: 593px;
   width: 436px;
   position: absolute;
@@ -344,12 +343,12 @@ button {
 .cta__split {
   background: var(--clr-primary-dv);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   align-items: center;
   justify-items: flex-end;
   position: relative;
   height: 250px;
-  padding: 3em;
+  padding: 4.25em;
 }
 
 .cta__split::before {
@@ -503,7 +502,7 @@ button {
     background: var(--clr-neutral-vdv);
     height: 100vh;
     position: fixed;
-    top: 70px;
+    top: 90px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -838,7 +837,47 @@ button {
   }
 }
 
-@media only screen and (min-width:375px) and (max-width: 859px) {
+
+@media only screen and (min-width: 794px) and (max-width: 859px) {
+  .promise__headline h1 {
+    font-size: 2.5rem;
+  }
+
+  .promise::before {
+    background-size: 60%;
+    background-position: 100% 0;
+  }
+
+  #blog::before {
+    background-size: 60%;
+    background-position: 0 80%;
+  }
+
+  .cta__split {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .cta__heading {
+    font-size: 2rem;
+  }
+
+  .feature__items {
+    grid-template-columns: 1fr;
+    grid-gap: 3em;
+  }
+
+  .feature__item {
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+  }
+
+  .feature__item p {
+    max-width: 25em;
+  }
+}
+
+@media only screen and (min-width:375px) and (max-width: 935px) {
   .nav-menu::before {
     content: "";
     background: url(".././img/bg-pattern-intro-right-desktop.svg")
@@ -854,9 +893,9 @@ button {
   }
 }
 
-@media only screen and (max-width: 859px) {
-  /* HAMBURGER MENU BREAKPOINT */
-
+@media only screen and (max-width: 935px) {
+  /* HAMBURGER BREAKPOINT */
+  
   .nav-links {
     display: none;
   }
@@ -869,7 +908,7 @@ button {
     background: var(--clr-neutral-vdv);
     height: 100vh;
     position: fixed;
-    top: 70px;
+    top: 90px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -913,6 +952,11 @@ button {
     display: none;
   }
 
+  .feature__item {
+    align-items: center;
+    text-align: center;
+  }
+
   .feature__mobile-divider {
     display: block;
     border-top: 1px solid #837d87;
@@ -924,48 +968,19 @@ button {
   .cta__button {
     z-index: 21;
   }
-}
-
-@media only screen and (min-width: 794px) and (max-width: 859px) {
-  .promise__headline h1 {
-    font-size: 2.5rem;
-  }
-
-  .promise::before {
-    background-size: 60%;
-    background-position: 100% 0;
-  }
-
-  #blog::before {
-    background-size: 60%;
-    background-position: 0 80%;
-  }
 
   .cta__split {
-    grid-template-columns: 1.5fr 1fr;
+    padding: 3em;
   }
 
   .cta__heading {
     font-size: 2rem;
-  }
-
-  .feature__items {
-    grid-template-columns: 1fr;
-    grid-gap: 3em;
-  }
-
-  .feature__item {
-    align-items: center;
-    text-align: center;
-    gap: 0.5em;
-  }
-
-  .feature__item p {
-    max-width: 25em;
+    max-width: none;
   }
 }
 
 @media only screen and (min-width: 860px) and (max-width: 991px) {
+  
   .promise__headline h1 {
     font-size: 3rem;
   }
@@ -978,6 +993,10 @@ button {
   #blog::before {
     background-size: 60%;
     background-position: 0 80%;
+  }
+
+  .cta__heading {
+    font-size: 2.2rem;
   }
 }
 
@@ -994,6 +1013,13 @@ button {
   #blog::before {
     background-size: 65%;
     background-position: 0 80%;
+  }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1094px) {
+  .cta__heading {
+    font-size: 2.8rem;
+    color: red;
   }
 }
 
@@ -1014,7 +1040,7 @@ button {
     font-size: 4rem;
   }
   .promise::before {
-    background-size: 90%;
+    background-size: 100%;
     background-position: top right;
   }
 
@@ -1025,7 +1051,17 @@ button {
 }
 
 @media only screen and (min-width: 1440px) {
+  .promise::before {
+    background-size: 100%;
+  }
+
+  #blog::before {
+    background-size: 100%;
+    bottom: -85px;
+  }
+
   .promise__headline h1 {
+    font-size: 4.7rem;
     max-width: 560px;
   }
 
