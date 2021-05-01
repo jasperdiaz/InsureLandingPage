@@ -354,7 +354,7 @@ button {
 
 .cta__split::before {
   content: "";
-  background: url("/assets/img/bg-pattern-how-we-work-desktop.svg")
+  background: url("//assets/img/bg-pattern-how-we-work-desktop.svg")
     no-repeat;
   width: 434px;
   height: 250px;
