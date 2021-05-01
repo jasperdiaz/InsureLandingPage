@@ -1019,7 +1019,6 @@ button {
 @media only screen and (min-width: 980px) and (max-width: 1094px) {
   .cta__heading {
     font-size: 2.8rem;
-    color: red;
   }
 }
 
