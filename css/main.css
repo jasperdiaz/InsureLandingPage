@@ -515,7 +515,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("InsureLandingPage.././img/bg-pattern-mobile-nav.svg")
+    background: url(".././img/bg-pattern-mobile-nav.svg")
       no-repeat;
     position: absolute;
     bottom: 0;
@@ -838,6 +838,22 @@ button {
   }
 }
 
+@media only screen and (min-width:375px) and (max-width: 859px) {
+  .nav-menu::before {
+    content: "";
+    background: url(".././img/bg-pattern-intro-right-desktop.svg")
+      no-repeat;
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 436px;
+    height: 593px;
+    transform: rotate(90deg);
+    background-position: 100% 20%;
+    background-size: 55%;
+  }
+}
+
 @media only screen and (max-width: 859px) {
   /* HAMBURGER MENU BREAKPOINT */
 
@@ -861,20 +877,6 @@ button {
     align-items: center;
     padding: 2em 1.5em;
     z-index: 99;
-  }
-
-  .nav-menu::before {
-    content: "";
-    background: url(".././img/bg-pattern-intro-right-desktop.svg")
-      no-repeat;
-    position: absolute;
-    bottom: -10px;
-    right: 0;
-    width: 436px;
-    height: 593px;
-    transform: rotate(90deg);
-    background-position: 100% 20%;
-    background-size: 55%;
   }
 
   .nav-menu__link {
