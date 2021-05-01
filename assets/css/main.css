@@ -517,7 +517,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("/assets/img/bg-pattern-mobile-nav.svg")
+    background: url("InsureLandingPage/assets/img/bg-pattern-mobile-nav.svg")
       no-repeat;
     position: absolute;
     bottom: 0;
