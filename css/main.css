@@ -125,7 +125,6 @@ button {
   bottom: 0;
   background: var(--clr-primary-100);
   z-index: 100;
-  height: 5.625em;
   display: flex;
   align-items: center;
 }
@@ -489,10 +488,6 @@ button {
   }
 
   /* NAV BURGER START */
-
-  .nav-bar {
-    height: 4em;
-  }
 
   .nav-links {
     display: none;
@@ -882,10 +877,6 @@ button {
 }
 
 @media only screen and (min-width:375px) and (max-width: 935px) {
-  .nav-bar {
-    height: 5em;
-  }
-
   .nav-menu::before {
     content: "";
     background: url(".././img/bg-pattern-intro-right-desktop.svg")
@@ -898,6 +889,12 @@ button {
     transform: rotate(90deg);
     background-position: 100% 20%;
     background-size: 55%;
+  }
+}
+
+@media only screen and (min-width: 935px) {
+  .nav-menu {
+    display: none;
   }
 }
 
@@ -916,7 +913,7 @@ button {
     background: var(--clr-neutral-vdv);
     height: 100vh;
     position: fixed;
-    top: 64px;
+    top: 80px;
     left: 0;
     right: 0;
     flex-direction: column;
