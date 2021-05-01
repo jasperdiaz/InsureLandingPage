@@ -362,7 +362,6 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 20;
 }
 
 .cta__heading {
@@ -473,8 +472,7 @@ button {
 
 @media only screen and (max-width: 375px) {
   #blog::before,
-  .promise::before,
-  .cta__split::before {
+  .promise::before {
     background: none;
   }
 
@@ -768,7 +766,7 @@ button {
 
   .cta__split::before {
     content: "";
-    background: url("img/bg-pattern-how-we-work-mobile.svg")
+    background: url(".././img/bg-pattern-how-we-work-mobile.svg")
       no-repeat;
     background-position: top right;
     width: 176px;
