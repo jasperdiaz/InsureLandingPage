@@ -66,7 +66,7 @@ a:not([class]) {
 }
 
 /* Make images easier to work with */
-/img,
+./img,
 picture {
   max-width: 100%;
   display: block;
@@ -175,11 +175,11 @@ button {
 }
 
 .nav-burger-open {
-  background: url("/img/icon-hamburger.svg");
+  background: url("./img/icon-hamburger.svg");
 }
 
 .nav-burger-close {
-  background: url("/img/icon-close.svg");
+  background: url("./img/icon-close.svg");
 }
 
 /* Promise Section */
@@ -194,7 +194,7 @@ button {
 .promise::before {
   content: "";
   display: inline-block;
-  background: url("/img/bg-pattern-intro-right-desktop.svg") no-repeat;
+  background: url("./img/bg-pattern-intro-right-desktop.svg") no-repeat;
 
   height: 593px;
   width: 436px;
@@ -283,7 +283,7 @@ button {
 #blog::before {
   content: "";
   display: inline-block;
-  background: url("/img/bg-pattern-intro-left-desktop.svg") no-repeat;
+  background: url("./img/bg-pattern-intro-left-desktop.svg") no-repeat;
   height: 504px;
   width: 195px;
   position: absolute;
@@ -352,7 +352,7 @@ button {
 
 .cta__split::before {
   content: "";
-  background: url("/img/bg-pattern-how-we-work-desktop.svg") no-repeat;
+  background: url("./img/bg-pattern-how-we-work-desktop.svg") no-repeat;
   width: 434px;
   height: 250px;
   position: absolute;
@@ -401,7 +401,7 @@ button {
 
 .social-links::before {
   content: "";
-  background: url("/img/bg-pattern-footer-desktop.svg") no-repeat;
+  background: url("./img/bg-pattern-footer-desktop.svg") no-repeat;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -430,12 +430,12 @@ button {
   justify-content: flex-end;
 }
 
-.socials /img {
+.socials ./img {
   height: 24px;
   transition: transform 0.1s 0s ease;
 }
 
-.socials /img:hover {
+.socials ./img:hover {
   transform: scale(1.5);
 }
 
@@ -513,7 +513,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("InsureLandingPage//img/bg-pattern-mobile-nav.svg") no-repeat;
+    background: url("InsureLandingPage/./img/bg-pattern-mobile-nav.svg") no-repeat;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -581,7 +581,7 @@ button {
   .promise__headline::before {
     content: "";
     position: absolute;
-    background: url("/img/bg-pattern-intro-left-mobile.svg") no-repeat;
+    background: url("./img/bg-pattern-intro-left-mobile.svg") no-repeat;
     background-position: top left;
     height: 165px;
     width: 168px;
@@ -594,7 +594,7 @@ button {
   .promise__headline::after {
     content: "";
     position: absolute;
-    background: url("/img/bg-pattern-intro-right-mobile.svg") no-repeat;
+    background: url("./img/bg-pattern-intro-right-mobile.svg") no-repeat;
     background-position: bottom right;
     height: 330px;
     width: 124px;
@@ -666,7 +666,7 @@ button {
 
   .cta__split::before {
     content: "";
-    background: url("/img/bg-pattern-how-we-work-mobile.svg") no-repeat;
+    background: url("./img/bg-pattern-how-we-work-mobile.svg") no-repeat;
     background-position: top right;
     width: 176px;
     height: 317px;
@@ -689,7 +689,7 @@ button {
 
   .social-links::before {
     content: "";
-    background: url("/img/bg-pattern-footer-mobile.svg") no-repeat;
+    background: url("./img/bg-pattern-footer-mobile.svg") no-repeat;
     background-position: top center;
     position: absolute;
     top: 0;
@@ -736,7 +736,7 @@ button {
     font-size: 2.5rem;
   }
 
-  /* .promise__image /img {
+  /* .promise__image ./img {
     max-width: 70%;
   } */
 
@@ -759,7 +759,7 @@ button {
 
   .cta__split::before {
     content: "";
-    background: url("/img/bg-pattern-how-we-work-mobile.svg") no-repeat;
+    background: url("./img/bg-pattern-how-we-work-mobile.svg") no-repeat;
     background-position: top right;
     width: 176px;
     height: 317px;
@@ -857,7 +857,7 @@ button {
 
   .nav-menu::before {
     content: "";
-    background: url("/img/bg-pattern-intro-right-desktop.svg") no-repeat;
+    background: url("./img/bg-pattern-intro-right-desktop.svg") no-repeat;
     position: absolute;
     bottom: -10px;
     right: 0;
