@@ -329,6 +329,10 @@ button {
   font-weight: 100;
 }
 
+.feature__item p {
+  color: var(--clr-neutral-dgv);
+}
+
 .feature__icon {
   width: 86px;
   height: 86px;
@@ -390,7 +394,7 @@ button {
 
 .social-links {
   background: var(--clr-neutral-vlg);
-  padding: 5em 0;
+  padding: 4.2em 0;
   position: relative;
 }
 
