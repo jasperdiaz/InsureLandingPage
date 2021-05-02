@@ -22,3 +22,5 @@ function navTransition () {
 }
 
 navToggle.addEventListener('click', navTransition);
+
+

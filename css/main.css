@@ -18,14 +18,12 @@
   --bd-primary-clr: #2b272f;
 }
 
-/* Box sizing rules */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -39,19 +37,16 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within,
 html {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -60,19 +55,16 @@ body {
   font-size: 1rem;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -123,7 +115,6 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
-  height: 5em;
   background: var(--clr-primary-100);
   z-index: 100;
   display: flex;
@@ -134,7 +125,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5em 0;
+  padding: 0.8em 0;
 }
 
 .nav-links li {
@@ -314,7 +305,8 @@ button {
   top: -60px;
   right: 0;
   left: 0;
-  border-top: 1px solid #837d87;
+  border-top: 2px solid #837d87;
+  opacity: 0.5;
   width: 180px;
 }
 
@@ -329,6 +321,10 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.feature__item h2 {
+  font-family: var(--ff-heading);
 }
 
 /* .feature__item h2 {
@@ -421,7 +417,8 @@ button {
 
 .social-links__divider {
   grid-column: span 4;
-  border: 1px solid #837d87;
+  border-bottom: 2px solid #837d87;
+  opacity: 0.5;
 }
 
 .socials {
@@ -482,10 +479,6 @@ button {
 
   .container-mobile {
     width: 100%;
-  }
-
-  .nav-flex {
-    padding: 1.2em 0;
   }
 
   /* NAV BURGER START */
@@ -553,8 +546,8 @@ button {
 
   .promise {
     padding: 0;
-    height: 70em;
     position: relative;
+    height: 67.8em;
   }
 
   .promise::after {
@@ -573,11 +566,10 @@ button {
   }
 
   .promise__headline {
-    padding: 2em;
+    padding: 5.8em 2em;
     grid-row: 2;
     position: relative;
     justify-content: center;
-    height: 38em;
   }
 
   .promise__headline::before {
@@ -602,7 +594,7 @@ button {
     background-position: bottom right;
     height: 330px;
     width: 124px;
-    bottom: 0;
+    bottom: -205px;
     right: 0;
     border: none;
     z-index: 11;
@@ -883,7 +875,7 @@ button {
     background: url(".././img/bg-pattern-intro-right-desktop.svg")
       no-repeat;
     position: absolute;
-    bottom: -10px;
+    bottom: -30px;
     right: 0;
     width: 436px;
     height: 593px;
@@ -893,8 +885,12 @@ button {
   }
 }
 
-@media only screen and (min-width: 935px) {
-  .nav-menu {
+@media only screen and (min-width: 936px) {
+  .scroll-hidden {
+    overflow: auto;
+  }
+
+  .nav-menu__link {
     display: none;
   }
 }
@@ -914,7 +910,7 @@ button {
     background: var(--clr-neutral-vdv);
     height: 100vh;
     position: fixed;
-    top: 80px;
+    top: 58px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -965,7 +961,8 @@ button {
 
   .feature__mobile-divider {
     display: block;
-    border-top: 1px solid #837d87;
+    border-top: 2px solid #837d87;
+    opacity: 0.5;
     width: 180px;
     margin: 0 auto;
   }
