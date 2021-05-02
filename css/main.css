@@ -839,7 +839,7 @@ button {
 
   .promise::before {
     background-size: 60%;
-    background-position: 100% 0;
+    background-position: 100% -20%;
   }
 
   #blog::before {
@@ -996,7 +996,7 @@ button {
 
   .promise::before {
     background-size: 60%;
-    background-position: 100% 0;
+    background-position: 100% -20%;
   }
 
   #blog::before {
@@ -1016,7 +1016,7 @@ button {
 
   .promise::before {
     background-size: 65%;
-    background-position: 100% 0;
+    background-position: 100% -25%;
   }
 
   #blog::before {
@@ -1034,7 +1034,7 @@ button {
 @media only screen and (min-width: 1199px) {
   .promise::before {
     background-size: 70%;
-    background-position: 100% 0;
+    background-position: 100% -31%;
   }
 
   #blog::before {
@@ -1048,8 +1048,8 @@ button {
     font-size: 4rem;
   }
   .promise::before {
-    background-size: 100%;
-    background-position: top right;
+    background-size: 75%;
+    background-position: 100% -41%;
   }
 
   #blog::before {
@@ -1061,6 +1061,7 @@ button {
 @media only screen and (min-width: 1440px) {
   .promise::before {
     background-size: 100%;
+    top: -82px;
   }
 
   #blog::before {
