@@ -53,6 +53,7 @@ body {
   font-family: var(--ff-body);
   font-weight: 400;
   font-size: 1rem;
+  background: var(--clr-primary-100);
 }
 
 a:not([class]) {
