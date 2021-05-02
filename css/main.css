@@ -1092,3 +1092,13 @@ button {
     width: 75em;
   }
 }
+
+
+/* || FRONT END MENTOR */
+
+.attribution { 
+  font-size: 1rem; 
+  text-align: center; 
+  padding: 1em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
