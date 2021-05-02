@@ -164,6 +164,7 @@ button {
   display: none;
   height: 32px;
   width: 32px;
+  cursor: pointer;
 }
 
 .nav-burger-open {
@@ -325,11 +326,8 @@ button {
 
 .feature__item h2 {
   font-family: var(--ff-heading);
+  font-weight: 100;
 }
-
-/* .feature__item h2 {
-  margin: 1em 0 0.8em 0;
-} */
 
 .feature__icon {
   width: 86px;
