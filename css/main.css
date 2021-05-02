@@ -742,7 +742,7 @@ button {
 
   .promise::before {
     background-size: 45%;
-    background-position: 100% 0;
+    background-position: 100% -10%;
   }
 
   #blog::before {
@@ -805,7 +805,7 @@ button {
 
   .promise::before {
     background-size: 50%;
-    background-position: 100% 0;
+    background-position: 100% -13%;
   }
 
   #blog::before {
@@ -872,6 +872,10 @@ button {
 }
 
 @media only screen and (min-width:375px) and (max-width: 935px) {
+  .promise {
+    padding: 4em 0;
+  }
+  
   .nav-menu::before {
     content: "";
     background: url(".././img/bg-pattern-intro-right-desktop.svg")
@@ -946,10 +950,6 @@ button {
   .nav-menu__cta:hover {
     background: var(--clr-primary-100);
     color: var(--clr-primary-900);
-  }
-
-  .promise {
-    padding: 4em 0;
   }
 
   .feature__header {
